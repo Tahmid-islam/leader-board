@@ -5,6 +5,7 @@
 body {
   font-family: "Poppins", sans-serif;
   background-color: #f3f1ff;
+  margin: 0px;
 }
 
 main {
@@ -23,6 +24,53 @@ main {
 hr {
   border: 1px solid #d1d1d1;
   margin-bottom: 27px;
+}
+
+/* This is navbar */
+
+.navbar {
+  height: 94px;
+  width: 100%;
+  margin-bottom: 15px;
+  background-color: #562eff;
+  padding: 0px 20%;
+}
+
+.navbar-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.company-name {
+  display: flex;
+  align-items: center;
+}
+.company-name img {
+  width: 40.42px;
+  height: 51px;
+}
+.nav-link {
+  display: flex;
+}
+.nav-link ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.nav-link ul img {
+  width: 100%;
+  width: 51px;
+  height: 51px;
+}
+
+a {
+  width: 100%;
+  text-decoration: none;
+  padding: 0 35px;
+  color: white;
 }
 
 /* top players style */
@@ -127,6 +175,15 @@ hr {
   .container {
     width: 100%;
   }
+
+  .navbar,
+  .navbar a,
+  .navbar img {
+    width: 100%;
+    margin-bottom: 15px;
+    background-color: #562eff;
+    padding: 0px 20%;
+  }
   .players,
   .blogs,
   .courses {
@@ -144,6 +201,15 @@ hr {
 @media only screen and (min-width: 688px) and (max-width: 992px) {
   .container {
     width: 100%;
+  }
+
+  .navbar,
+  .navbar a,
+  .navbar img {
+    width: 100%;
+    margin-bottom: 15px;
+    background-color: #562eff;
+    padding: 0px 20%;
   }
   .players,
   .courses {
