@@ -28,11 +28,6 @@ hr {
 
 /* This is navbar */
 
-.header {
-  height: 94px;
-  margin-bottom: 15px;
-}
-
 .navbar {
   display: flex;
   justify-content: center;
@@ -175,33 +170,35 @@ a {
 @media only screen and (max-width: 688px) {
   .container {
     width: 100%;
+    padding: 0px;
   }
 
   .navbar {
-    width: 107%;
     font-size: 12px;
+    margin: 0px;
+    padding: 0px;
   }
 
   .navbar-content {
-    width: 90%;
-    display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-  }
-
-  .navbar-content a {
-    padding-left: 0%;
-  }
-
-  .navbar-content img {
-    display: flex;
-    flex-direction: row;
-    margin: 5px auto;
   }
 
   .nav-link {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .nav-link a {
+    padding: 0px 15px;
+  }
+
+  .nav-link img {
+    padding-bottom: 5px;
+  }
+
+  .section-title {
+    margin-left: 16px;
   }
 
   .players,
@@ -213,6 +210,12 @@ a {
   .blogs,
   .courses {
     flex-direction: column;
+  }
+  .blogs {
+    margin: 10px;
+  }
+  .courses {
+    align-items: center;
   }
 }
 
@@ -239,6 +242,10 @@ a {
     font-size: 12px;
   }
 
+  .section-title {
+    margin-left: 16px;
+  }
+
   .players,
   .courses {
     grid-template-columns: repeat(2, 1fr);
@@ -246,5 +253,14 @@ a {
 
   .blogs {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .players,
+  .blogs {
+    margin: 10px;
+  }
+
+  .courses {
+    align-items: center;
   }
 }
