@@ -28,19 +28,22 @@ hr {
 
 /* This is navbar */
 
-.navbar {
+.header {
   height: 94px;
-  width: 100%;
   margin-bottom: 15px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
   background-color: #562eff;
-  padding: 0px 20%;
 }
 
 .navbar-content {
-  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 870px;
 }
 
 .company-name {
@@ -60,14 +63,12 @@ hr {
   align-items: center;
 }
 
-.nav-link ul img {
-  width: 100%;
+.nav-link img {
   width: 51px;
   height: 51px;
 }
 
 a {
-  width: 100%;
   text-decoration: none;
   padding: 0 35px;
   color: white;
@@ -176,14 +177,33 @@ a {
     width: 100%;
   }
 
-  .navbar,
-  .navbar a,
-  .navbar img {
-    width: 100%;
-    margin-bottom: 15px;
-    background-color: #562eff;
-    padding: 0px 20%;
+  .navbar {
+    width: 107%;
+    font-size: 12px;
   }
+
+  .navbar-content {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .navbar-content a {
+    padding-left: 0%;
+  }
+
+  .navbar-content img {
+    display: flex;
+    flex-direction: row;
+    margin: 5px auto;
+  }
+
+  .nav-link {
+    display: flex;
+    flex-direction: column;
+  }
+
   .players,
   .blogs,
   .courses {
@@ -203,14 +223,22 @@ a {
     width: 100%;
   }
 
-  .navbar,
-  .navbar a,
-  .navbar img {
-    width: 100%;
-    margin-bottom: 15px;
-    background-color: #562eff;
-    padding: 0px 20%;
+  .navbar {
+    width: 104%;
   }
+
+  .navbar-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-link a,
+  .nav-link img {
+    display: flex;
+    font-size: 12px;
+  }
+
   .players,
   .courses {
     grid-template-columns: repeat(2, 1fr);
